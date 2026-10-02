@@ -1,6 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
+  serverExternalPackages: [
+    '@napi-rs/canvas',
+    'simple-ytdl-core',
+    'youtubei.js',
+    'bgutils-js',
+    'googlevideo',
+    'jsdom',
+  ],
 };
 
 export default nextConfig;
