@@ -1,6 +1,9 @@
 // In-memory cache for images
 const imageCache = new Map();
 const CACHE_LIMIT = 200;
+export const maxDuration = 60;
+export const dynamic = 'force-dynamic';
+export const runtime = 'nodejs';
 
 export async function GET(request) {
   const { searchParams } = new URL(request.url);

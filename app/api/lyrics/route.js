@@ -1,5 +1,8 @@
 import { NextResponse } from 'next/server';
 import { Innertube } from 'youtubei.js';
+export const maxDuration = 60;
+export const dynamic = 'force-dynamic';
+export const runtime = 'nodejs';
 
 export async function GET(request) {
   const { searchParams } = new URL(request.url);

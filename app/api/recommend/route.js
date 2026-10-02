@@ -1,5 +1,8 @@
 import { NextResponse } from 'next/server';
 import { Innertube } from 'youtubei.js';
+export const maxDuration = 60;
+export const dynamic = 'force-dynamic';
+export const runtime = 'nodejs';
 
 function getBestThumb(thumbnails) {
   if (!thumbnails || thumbnails.length === 0) return '';

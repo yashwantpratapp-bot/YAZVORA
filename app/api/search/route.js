@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server';
 import { Innertube } from 'youtubei.js';
+export const maxDuration = 60;
+export const runtime = 'nodejs';
 
 export const dynamic = 'force-dynamic';
 
