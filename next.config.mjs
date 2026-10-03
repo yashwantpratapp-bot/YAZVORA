@@ -1,9 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // ✅ Turbopack config (silences warning)
+  output: 'standalone',
   turbopack: {},
-
-  // ✅ Native packages ko server-side bundle se exclude karo
   serverExternalPackages: [
     'youtubei.js',
     'simple-ytdl-core',
@@ -11,9 +9,8 @@ const nextConfig = {
     '@napi-rs/canvas',
     'jsdom',
     'bgutils-js',
+    'googlevideo',
   ],
-
-  // ✅ Production optimizations
   compress: true,
   productionBrowserSourceMaps: false,
   poweredByHeader: false,
