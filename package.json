@@ -20,6 +20,6 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "simple-ytdl-core": "^1.0.0",
-    "youtubei.js": "^18.1.0"
+    "youtubei.js": "github:LuanRT/YouTube.js"
   }
 }
